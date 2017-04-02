@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\UrlsAndRoutes",
+    "\\UrlsAndRoutes.Tests",
+    "\\UrlsAndRoutes\\App_Start",
+    "\\UrlsAndRoutes\\Controllers",
+    "\\UrlsAndRoutes\\Infractructure",
+    "\\UrlsAndRoutes\\Properties",
+    "\\UrlsAndRoutes\\Views",
+    "\\UrlsAndRoutes\\Views\\Home",
+    "\\UrlsAndRoutes\\Views\\Shared"
+  ],
+  "SelectedNode": "\\UrlsAndRoutes.Tests\\UnitTest1.cs",
+  "PreviewInSolutionExplorer": false
+}

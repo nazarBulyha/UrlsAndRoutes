@@ -84,37 +84,5 @@ namespace UrlsAndRoutes.Tests
             // Утверждение
             Assert.IsTrue(result?.Route == null);
         }
-
-        //[TestMethod]
-        //public void TestIncomingRoutes()
-        //{
-        //    // Проверить URL который мы надеемся получить
-        //    TestRouteMatch("~/Admin/Index", "Admin", "Index");
-
-        //    // Проверить значения, получаемые из сегментов
-        //    TestRouteMatch("~/One/Two", "One", "Two");
-
-        //    // Удостовериться, что слишком много или слишком мало сегментов
-        //    // не приводят к совпадению
-        //    TestRouteFail("~/Admin/Index/ThirdSegment");
-        //    TestRouteFail("~/Admin");
-        //}
-
-        [TestMethod]
-        public void TestIncomingRoutes()
-        {
-            TestRouteMatch("~/", "Home", "Index");
-            TestRouteMatch("~/Home", "Home", "Index");
-            TestRouteMatch("~/Home/Index", "Home", "Index");
-            TestRouteMatch("~/Home/CustomVariable", "Home", "CustomVariable");
-            TestRouteMatch("~/Home/Index/All", "Home", "Index");
-            TestRouteMatch("~/Home/Index/All/Delete", "Home", "Index",
-                new { id = "All", catchcall = "Delete" });
-            TestRouteMatch("~/Home/Index/All/Delete/Insert", "Home", "Index",
-                new { id = "All", catchcall = "Delete/Insert" });
-
-            TestRouteFail("~/Home/About");
-            TestRouteFail("~/Admin/Index");
-        }
     }
 }

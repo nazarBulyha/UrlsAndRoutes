@@ -45,3 +45,6 @@ C:\Users\nazar\Documents\Visual Studio 2017\Projects\UrlsAndRoutes\UrlsAndRoutes
 C:\Users\nazar\Documents\Visual Studio 2017\Projects\UrlsAndRoutes\UrlsAndRoutes\obj\Debug\UrlsAndRoutes.csprojResolveAssemblyReference.cache
 C:\Users\nazar\Documents\Visual Studio 2017\Projects\UrlsAndRoutes\UrlsAndRoutes\obj\Debug\UrlsAndRoutes.dll
 C:\Users\nazar\Documents\Visual Studio 2017\Projects\UrlsAndRoutes\UrlsAndRoutes\obj\Debug\UrlsAndRoutes.pdb
+C:\Users\nazar\Documents\Visual Studio 2017\Projects\UrlsAndRoutes\UrlsAndRoutes\bin\Antlr3.Runtime.dll
+C:\Users\nazar\Documents\Visual Studio 2017\Projects\UrlsAndRoutes\UrlsAndRoutes\bin\System.Web.Optimization.dll
+C:\Users\nazar\Documents\Visual Studio 2017\Projects\UrlsAndRoutes\UrlsAndRoutes\bin\WebGrease.dll

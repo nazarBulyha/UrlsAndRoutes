@@ -1,5 +1,6 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
+using UrlsAndRoutes.Infrastructure;
 
 namespace UrlsAndRoutes
 {
@@ -7,9 +8,22 @@ namespace UrlsAndRoutes
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
-            // routes.MapMvcAttributeRoutes();
-            routes.MapRoute("MyRoute", "{controller}/{action}");
-            routes.MapRoute("MyOtherRoute", "App/{action}", new { controller = "Home" });
+            routes.RouteExistingFiles = true;
+            routes.MapMvcAttributeRoutes();
+
+            routes.IgnoreRoute("Content/{filename}.html");
+
+            routes.MapRoute("DiskFileRoute", "Content/StaticContent.html",
+                new
+                {
+                    controller = "Customer",
+                    action = "List"
+                });
+
+            routes.MapRoute("MyRoute", "{controller}/{action}",
+                            namespaces: new[] { "UrlsAndRoutes.Controllers" });
+            routes.MapRoute("MyOtherRoute", "App/{action}", new { controller = "Home" },
+                namespaces: new[] { "UrlsAndRoutes.Controllers" });
         }
     }
 }

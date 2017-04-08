@@ -11,24 +11,9 @@
 <body>
     <div>Контроллер: <strong>@ViewBag.Controller</strong></div>
     <div>Метод действия: <strong>@ViewBag.Action</strong></div>
-
     <div>
-        @Html.ActionLink("Сгенерированный URL для ссылки", "Index", "Admin")
-    </div>
-    <div>
-        @Html.ActionLink("Сгенерированный URL для ссылки", "Index", "Customer")
-    </div>
-    <div>
-        @Html.ActionLink("Сгенерированный URL для ссылки", "CustomVariable", new { id = "Hi" })
-    </div>
-    @Html.ActionLink("Сгенерированный URL для ссылки", "Index", "Home", null,
-            new
-            {
-                id = "myAhrefID",
-                @class = "myCSSClass"
-            })
-    <div>
-        URL: @Url.Action("Index", "Home", new { id = "MyId" })
+        @Html.ActionLink("Ссылка", "GetLegacyURL",
+            new { legacyURL = "~/old/NET_Framework_4" })
     </div>
 </body>
 </html>

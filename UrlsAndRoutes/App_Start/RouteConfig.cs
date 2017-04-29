@@ -11,7 +11,7 @@ namespace UrlsAndRoutes
             routes.RouteExistingFiles = true;
             routes.MapMvcAttributeRoutes();
 
-            routes.IgnoreRoute("Content/{filename}.html");
+            //routes.IgnoreRoute("Content/{filename}.html");
 
             routes.MapRoute("DiskFileRoute", "Content/StaticContent.html",
                 new
